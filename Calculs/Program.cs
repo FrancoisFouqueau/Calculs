@@ -28,14 +28,18 @@ namespace Calculs
                 Console.WriteLine("Quitter ........................ 0");
                 Console.Write("Choix :                          ");
                 choix = int.Parse(Console.ReadLine());
+
+                val1 = rand.Next(1, 10);
+                val2 = rand.Next(1, 10);
+
                 // traitement des choix
                 if (choix != 0)
+                    // choix de la multiplication
+                   
                 {
                     if (choix == 1)
                     {
-                        // choix de l'addition
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
+                        
                         // saisie de la réponse
                         Console.Write(val1 + " + " + val2 + " = ");
                         reponse = int.Parse(Console.ReadLine());
@@ -52,9 +56,7 @@ namespace Calculs
                     }
                     else
                     {
-                        // choix de la multiplication
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
+                       
                         // saisie de la réponse
                         Console.Write(val1 + " x " + val2 + " = ");
                         reponse = int.Parse(Console.ReadLine());
